@@ -1,0 +1,14 @@
+prefix=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install
+exec_prefix=${prefix}
+libdir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/lib
+includedir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/include
+
+Name: libavformatd
+Description: FFmpeg container format library
+Version: 60.16.100
+Requires: 
+Requires.private: libavcodecd >= 60.31.102, libswresampled >= 4.12.100, libavutild >= 58.29.100
+Conflicts:
+Libs: -L${libdir}  -lavformatd 
+Libs.private: secur32.lib ws2_32.lib
+Cflags: -I${includedir}

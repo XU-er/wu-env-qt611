@@ -1,0 +1,11 @@
+prefix=D:/projects/wu-env-qt6.11/install-dir/libqrencode-install
+exec_prefix=D:/projects/wu-env-qt6.11/install-dir/libqrencode-install/bin
+libdir=D:/projects/wu-env-qt6.11/install-dir/libqrencode-install/lib
+includedir=D:/projects/wu-env-qt6.11/install-dir/libqrencode-install/include
+
+Name: libqrencode
+Description: A QR Code encoding library
+Version: 4.1.1
+Libs: -L${libdir} -lqrencode
+Libs.private: 
+Cflags: -I${includedir}

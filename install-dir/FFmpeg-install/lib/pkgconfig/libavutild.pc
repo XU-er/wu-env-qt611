@@ -1,0 +1,14 @@
+prefix=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install
+exec_prefix=${prefix}
+libdir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/lib
+includedir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/include
+
+Name: libavutild
+Description: FFmpeg utility library
+Version: 58.29.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutild 
+Libs.private: user32.lib bcrypt.lib
+Cflags: -I${includedir}

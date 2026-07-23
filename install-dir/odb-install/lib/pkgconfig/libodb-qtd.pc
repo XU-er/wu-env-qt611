@@ -1,0 +1,7 @@
+Name: libodb-qt
+Version: 2.5.0
+Description: Qt ODB profile library
+URL: https://www.codesynthesis.com/products/odb/
+Cflags: -ID:\\projects\\wu-env-qt6.11\\install-dir\\odb-install\\include
+Libs: -LD:\\projects\\wu-env-qt6.11\\install-dir\\odb-install\\lib -lodb-qtd -lodbd
+Libs.private:

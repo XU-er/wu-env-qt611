@@ -1,0 +1,14 @@
+prefix=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install
+exec_prefix=${prefix}
+libdir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/lib
+includedir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/include
+
+Name: libavdeviced
+Description: FFmpeg device handling library
+Version: 60.3.100
+Requires: 
+Requires.private: libavfilterd >= 9.12.100, libswscaled >= 7.5.100, libavformatd >= 60.16.100, libavcodecd >= 60.31.102, libswresampled >= 4.12.100, libavutild >= 58.29.100
+Conflicts:
+Libs: -L${libdir}  -lavdeviced 
+Libs.private: psapi.lib ole32.lib strmiids.lib uuid.lib oleaut32.lib shlwapi.lib gdi32.lib vfw32.lib
+Cflags: -I${includedir}

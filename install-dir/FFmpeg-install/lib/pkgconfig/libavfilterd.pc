@@ -1,0 +1,14 @@
+prefix=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install
+exec_prefix=${prefix}
+libdir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/lib
+includedir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/include
+
+Name: libavfilterd
+Description: FFmpeg audio/video filtering library
+Version: 9.12.100
+Requires: 
+Requires.private: libswscaled >= 7.5.100, libavformatd >= 60.16.100, libavcodecd >= 60.31.102, libswresampled >= 4.12.100, libavutild >= 58.29.100
+Conflicts:
+Libs: -L${libdir}  -lavfilterd 
+Libs.private: 
+Cflags: -I${includedir}

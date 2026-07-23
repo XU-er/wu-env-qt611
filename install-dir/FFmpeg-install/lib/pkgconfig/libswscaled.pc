@@ -1,0 +1,14 @@
+prefix=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install
+exec_prefix=${prefix}
+libdir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/lib
+includedir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/include
+
+Name: libswscaled
+Description: FFmpeg image rescaling library
+Version: 7.5.100
+Requires: 
+Requires.private: libavutild >= 58.29.100
+Conflicts:
+Libs: -L${libdir}  -lswscaled 
+Libs.private: 
+Cflags: -I${includedir}

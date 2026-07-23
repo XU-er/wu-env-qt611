@@ -1,0 +1,9 @@
+prefix=D:/projects/wu-env-qt6.11/install-dir/aws-iot-device-sdk-install
+exec_prefix=D:/projects/wu-env-qt6.11/install-dir/aws-iot-device-sdk-install/bin
+libdir=D:/projects/wu-env-qt6.11/install-dir/aws-iot-device-sdk-install/lib
+includedir=D:/projects/wu-env-qt6.11/install-dir/aws-iot-device-sdk-install/include
+
+Name: aws-iot-sdk-cpp
+Description: AWS IoT C++ Device SDK
+Libs: -L${libdir} -laws-iot-sdk
+Cflags: -I${includedir}

@@ -1,0 +1,11 @@
+prefix=D:/projects/wu-env-qt6.11/install-dir/fftw-install
+exec_prefix=D:/projects/wu-env-qt6.11/install-dir/fftw-install
+libdir=D:/projects/wu-env-qt6.11/install-dir/fftw-install/lib
+includedir=D:/projects/wu-env-qt6.11/install-dir/fftw-install/include
+
+Name: FFTW
+Description: fast Fourier transform library
+Version: 3.3.10
+Libs: -L${libdir} -lfftw3 
+Libs.private: -lm
+Cflags: -I${includedir}

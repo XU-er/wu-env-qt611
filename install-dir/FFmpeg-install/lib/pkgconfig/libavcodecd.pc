@@ -1,0 +1,14 @@
+prefix=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install
+exec_prefix=${prefix}
+libdir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/lib
+includedir=/d/projects/wu-env-qt6.11/install-dir/FFmpeg-install/include
+
+Name: libavcodecd
+Description: FFmpeg codec library
+Version: 60.31.102
+Requires: 
+Requires.private: libswresampled >= 4.12.100, libavutild >= 58.29.100
+Conflicts:
+Libs: -L${libdir}  -lavcodecd 
+Libs.private: mfuuid.lib ole32.lib strmiids.lib ole32.lib user32.lib
+Cflags: -I${includedir}
